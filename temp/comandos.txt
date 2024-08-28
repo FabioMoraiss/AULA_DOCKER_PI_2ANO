@@ -1,5 +1,5 @@
 docker build -t go-dev-container .
-docker run -it --rm -v /primeirovolume:/app -p 8080:8080 go-dev-container
+docker run -it --rm -v /home/aluno/temp:/app -p 8080:8080 go-dev-container
 instalar a extenção "remote develoment"
 anexar container em nova janela
 go run main.go
