@@ -1,0 +1,14 @@
+# Use uma imagem base com Go pré-instalado
+FROM golang:1.21
+
+# Crie um diretório para o código-fonte
+WORKDIR /app
+
+# Instale o Git (opcional, se você precisar clonar repositórios)
+RUN apt-get update && apt-get install -y git
+
+# Exponha a porta em que seu aplicativo Go pode estar ouvindo (opcional)
+EXPOSE 8080
+
+# Comando padrão (você pode sobrescrever isso ao executar o container)
+CMD ["bash"]
